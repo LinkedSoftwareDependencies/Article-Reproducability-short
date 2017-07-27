@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Towards reproducible software experiments through semantic configurations</title>
+  <title>Describing configurations of software experiments as Linked Data</title>
   <link href="styles/screen.css" media="screen" rel="stylesheet" title="IDLab" />
   <link href="styles/print.css"  media="print"  rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet" />
@@ -18,7 +18,7 @@
   <main>
 <article about="" typeof="schema:Article">
     <header>
-      <h1 id="towards-reproducible-software-experiments-through-semanticconfigurations">Towards reproducible software experiments through semantic configurations</h1>
+      <h1 id="describing-configurations-of-software-experiments-as-linked-data">Describing configurations of software experiments as Linked Data</h1>
 
       <ul id="authors">
         <li><a href="http://www.rubensworks.net/" rel="schema:author" typeof="http://xmlns.com/foaf/0.1/Person" resource="http://www.rubensworks.net/#me">Ruben Taelman</a><a href="#idlab"><sup>1</sup></a></li>
@@ -39,23 +39,24 @@
         <h2>Abstract</h2>
 
         <!-- Context      -->
-        <p>The scientific process requires reproducible experiments and findings
-to foster trust and accountability.
-Within computer science engineering,
-reproducing experiments involves setting up
-identical software, benchmarks and test data,
-which often requires non-trivial manual work.
+        <p>Within computer science engineering,
+research articles often rely on software experiments
+in order to evaluate contributions.
+Reproducing such experiments involves setting up
+software, benchmarks, and test data.
 <!-- Need         -->
 Unfortunately,
-many research articles ambiguously refer to software by name only,
-leaving out crucial details such as module and dependency version numbers
-or the configuration of the individual components.
+many articles ambiguously refer to software by name only,
+leaving out crucial details for reproducibility,
+such as module and dependency version numbers
+or the configuration of individual components
+in different setups.
 <!-- Task         -->
-To this end, we created vocabularies
+To address this, we created the <em>Object-Oriented Components</em> ontology
 for the semantic description of software components and their configuration.
 <!-- Object       -->
-This article discusses the approach and its application,
-and explains with a use case
+This article discusses the ontology and its application,
+and demonstrates with a use case
 how to publish experiments and their software configurations on the Web.
 <!-- Findings     -->
 In order to enable semantic interlinking between configurations and modules,
@@ -64,16 +65,16 @@ as 194,000,000+ RDF triples.
 <!-- Conclusion   -->
 Through our work,
 research articles can refer by URL
-to fine-grained descriptions of experimental setups,
-completing the provenance chain from specifications 
-to implementations, dependencies, and configurations 
-all the way to experimental results.
-This ultimately brings us closer to faster and more accurate reproductions of experiments,
-and facilitates the evaluation of new research contributions.
+to fine-grained descriptions of experimental setups.
+This brings us faster to accurate reproductions of experiments,
+and facilitates the evaluation of new research contributions
+with different software configurations.
 <!-- Perspectives -->
-In the future, this could then be extended
-by instantiating software based on these descriptions and configurations,
-and by reasoning or querying over software configuration metadata.</p>
+In the future,
+software could be instantiated automatically
+based on these descriptions and configurations,
+reasoning and querying can be applied to software configurations
+for meta-research purposes.</p>
 
       </section>
 
