@@ -7,7 +7,7 @@ that were used when running the experiment.
 To this end we converted the entire npm library to RDF.
 That library contains over 480,000 JavaScript packages
 and is the most relevant JavaScript package manager.
-After conversion we publish over 174,000,000 
+After conversion we publish over 194,000,000 
 [triples](https://linkedsoftwaredependencies.org/) through multiple interfaces.
 
 We also created an ontology to describe
