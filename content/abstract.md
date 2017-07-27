@@ -26,10 +26,13 @@ as 194,000,000+ RDF triples.
 <!-- Conclusion   -->
 Through our work,
 research articles can refer by URL
-to fine-grained descriptions of experimental setups.
-This ultimately brings faster and more accurate reproductions of experiments,
+to fine-grained descriptions of experimental setups,
+completing the provenance chain from specifications 
+to implementations, dependencies, and configurations 
+all the way to experimental results.
+This ultimately brings us closer to faster and more accurate reproductions of experiments,
 and facilitates the evaluation of new research contributions.
 <!-- Perspectives -->
-Moreover, this work can serve other use cases,
-such as instantiating software based on their descriptions and configurations,
-and reasoning or querying over software configuration metadata.
+In the future, this could then be extended
+by instantiating software based on these descriptions and configurations,
+and by reasoning or querying over software configuration metadata.
