@@ -298,6 +298,9 @@ sub {
 
 q {
   font-style: italic;
+  em {
+    font-weight: bold;
+  }
 
   &::before {
     content: "“";

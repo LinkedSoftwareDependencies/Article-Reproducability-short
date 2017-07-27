@@ -8,15 +8,14 @@ to understand which _exact_ version of the software,
 which versions of its _dependencies_,
 and which detailed _configuration_ of the software's components
 has obtained the reported results.
-Therefore, potential users do not necessarily obtain the correct software installation
+Therefore, potential users cannot always mirror the correct software installation
 that will behave according to the article's conclusions.
-Moreover, other researchers might fail
-in reproducing the same results
-because of differences in any such aspects.
+Other researchers might fail to reproduce the results
+because of differences in these aspects.
 
 As [Claerbout's Principle](cite:providesQuotationFor WaveLab) explains,
 <q>an article about computational science in a scientific publication
-is not the scholarship itself, it is merely **advertising** of the scholarship.
+is not the scholarship itself, it is merely _advertising_ of the scholarship.
 The actual scholarship is the complete software development environment
 and the complete set of instructions which generated the figures.</q>
 This stresses the importance of reproducibility,
