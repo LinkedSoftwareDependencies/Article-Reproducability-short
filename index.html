@@ -154,9 +154,9 @@ Finally, we discuss our conclusions and future work in <a href="#conclusion">Sec
 and ontologies for describing these experiments.</p>
 
       <h3 id="reproducibility-of-software-experiments">Reproducibility of software experiments</h3>
-      <p>In order to better keep track of experiments and minimise information loss at CERN, <a property="http://purl.org/spar/cito/citesForInformation" href="https://www.w3.org/History/1989/proposal.html">Information Management: A Proposal</a> <a class="reference" href="#ref-3">[3]</a>, recommends a system (WWW) to address questions like <q>Where is this module used? Who wrote this code? Which systems depend on this device?</q>. We contend that the vision to link information systems in the domain of scientific experiments and scholarly articles is not fully realized on the Web. Identifiable parts of experiments, workflows, as well as the articles which refer to them, still predominantly require human intervention and interpretation, and thereby leaving deterministic reproducibility an open problem on the Web. Our work focuses on improving the state of <q>black box</q> science, in particular to experiments using software from the <cite>node package manager</cite>.</p>
+      <p>In order to better keep track of experiments and minimize information loss at CERN, <a property="http://purl.org/spar/cito/citesForInformation" href="https://www.w3.org/History/1989/proposal.html">Information Management: A Proposal</a> <a class="reference" href="#ref-3">[3]</a>, recommends a system (WWW) to address questions like <q>Where is this module used? Who wrote this code? Which systems depend on this device?</q>. We contend that the vision to link information systems in the domain of scientific experiments and scholarly articles is not fully realized on the Web. Identifiable parts of experiments, workflows, as well as the articles which refer to them, still predominantly require human intervention and interpretation, and thereby leaving deterministic reproducibility an open problem on the Web. Our work focuses on improving the state of <q>black box</q> science, in particular to experiments using software written for the Web’s programming language JavaScript.</p>
 
-      <p>In <a property="http://purl.org/spar/cito/cites" href="http://eprints.sztaki.hu/8625/1/Banati_241_2985874_ny.pdf">four-level provenance</a> <a class="reference" href="#ref-4">[4]</a>, authors show that infrastructural, environmental, workflow and data provenance, are needed to achieve reproducibility of scientific workflows.
+      <p>In <a property="http://purl.org/spar/cito/cites" href="http://eprints.sztaki.hu/8625/1/Banati_241_2985874_ny.pdf">four-level provenance</a> <a class="reference" href="#ref-4">[4]</a>, the authors show that infrastructural, environmental, workflow and data provenance, are needed to achieve reproducibility of scientific workflows.
 The information captured at different levels of quality enables different levels of reproducibility or repeatability.
 While our work is conceptually grounded on the same levels, we describe our concrete work on globally identifiable and semantic descriptions of software modules and configurations.</p>
 
@@ -176,7 +176,7 @@ our work focuses on reusability of software within experiments, and replication 
       <p>The <a property="http://purl.org/spar/cito/citesAsAuthority" href="https://www.w3.org/TR/prov-o/">PROV Ontology</a> <a class="reference" href="#ref-6">[6]</a> is a domain-independent ontology to capture provenance information about entities, activities, and agents involved in producing data. <a property="http://purl.org/spar/cito/citesAsAuthority" href="http://www.opmw.org/model/OPMW/">The OPMW-PROV Ontology</a> <a class="reference" href="#ref-7">[7]</a> is an ontology for describing abstract and executable workflows. It extends PROV-O and the <a property="http://purl.org/spar/cito/citesAsAuthority" href="http://vocab.linkeddata.es/p-plan/">P-PLAN Ontology</a> <a class="reference" href="#ref-8">[8]</a> which is designed to represent scientific processes. The <a property="http://purl.org/spar/cito/citesAsAuthority" href="https://www.w3.org/TR/vocab-data-cube/">RDF Data Cube Vocabulary</a> <a class="reference" href="#ref-9">[9]</a> enables defining and publishing multi-dimensional data structures and observations.
 <a property="http://purl.org/spar/cito/citesAsAuthority" href="http://rdf-vocabulary.ddialliance.org/discovery.html">DDI-RDF Discovery Vocabulary</a> <a class="reference" href="#ref-10">[10]</a> is a vocabulary for publishing metadata about research and survey data.</p>
 
-      <p><a property="http://purl.org/spar/cito/cites" href="https://doi.org/10.1016/j.websem.2015.01.003">Workflow-Centric Research Objects</a> <a class="reference" href="#ref-11">[11]</a> realises a suite of ontologies with the <cite><a href="https://w3id.org/ro/">Wf4Ever Research Object Model</a></cite> based on empirical analysis of workflow decay and repair in order to improve scientific workflow preservation requirements. It has the means to aggregate or bundle resources like workflows, provenance of executions, publications and datasets. <a property="http://purl.org/spar/cito/cites" href="http://www.ifs.tuwien.ac.at/%7Emayer/publications/pdf/may_escience14.pdf">Ontologies for Describing the Context of Scientific Experiment Processes</a> <a class="reference" href="#ref-12">[12]</a> compliments the Research Objects model with the <cite><a href="http://www.timbusproject.net/portal/publications/ontologies/">TIMBUS Context Model</a></cite> by process preservation. Its <q>context can range from immediate and local aspects such as the software and hardware supporting the process, to aspects such as the organisation the process is executed in, the people involved, service providers, and even laws and regulations</q>.</p>
+      <p><a property="http://purl.org/spar/cito/cites" href="https://doi.org/10.1016/j.websem.2015.01.003">Workflow-Centric Research Objects</a> <a class="reference" href="#ref-11">[11]</a> realizes a suite of ontologies with the <cite><a href="https://w3id.org/ro/">Wf4Ever Research Object Model</a></cite> based on empirical analysis of workflow decay and repair in order to improve scientific workflow preservation requirements. It has the means to aggregate or bundle resources like workflows, provenance of executions, publications and datasets. <a property="http://purl.org/spar/cito/cites" href="http://www.ifs.tuwien.ac.at/%7Emayer/publications/pdf/may_escience14.pdf">Ontologies for Describing the Context of Scientific Experiment Processes</a> <a class="reference" href="#ref-12">[12]</a> compliments the Research Objects model with the <cite><a href="http://www.timbusproject.net/portal/publications/ontologies/">TIMBUS Context Model</a></cite> by process preservation. Its <q>context can range from immediate and local aspects such as the software and hardware supporting the process, to aspects such as the organization the process is executed in, the people involved, service providers, and even laws and regulations</q>.</p>
 
       <p><a property="http://purl.org/spar/cito/cites" href="http://svn.aksw.org/papers/2015/SEMANTICS_LDWPO/public.pdf">LODFlow</a> <a class="reference" href="#ref-13">[13]</a> proposes the <cite><a href="https://github.com/AKSW/ldwpo">Linked Data Workflow Project Ontology</a></cite> to describe and plan workflows, tool configurations, and reporting.
 Tool specifications and their configurations in LODFlow workflows are described declaratively by a human user without a prescribed schema.
@@ -189,19 +189,22 @@ Consequently, this makes it possible to accurately describe software experiments
     <section id="ontology">
       <h2>Ontology</h2>
 
-      <p>To make sure we can fully describe our experiments in RDF,
-we need some way to link to the specific software components
+      <p>To fully describe experiments in RDF,
+we need a way to link to the specific software components
 that were used when running the experiment.
-To this end we converted the entire npm library to RDF.
-That library contains over 480,000 JavaScript packages
-and is the most relevant JavaScript package manager.
-After conversion we publish over 194,000,000 
+As a use case,
+we considered the largest ecosystem of the popular JavaScript language:
+the registry of the <em>Node Package Manager (npm)</em>.
+We converted the entire npm registry,
+consisting of over 480,000 JavaScript packages,
+to RDF.
+After conversion, we published the resulting 194,000,000+
 <a href="https://linkedsoftwaredependencies.org/">triples</a> through multiple interfaces.</p>
 
       <p>We also created an ontology to describe
 how software components can be configured.
-Now we can not only describe all the packages used by the software,
-but also how the software itself is configured for maximum reproducability.</p>
+That way, we can not only describe all the packages used by the software,
+but also how the software itself is configured.</p>
 
       <h3 id="software-modules">Software modules</h3>
 
@@ -225,26 +228,25 @@ Drilling down from the top to the bottom, we have the following layers:</p>
       </ul>
 
       <p>Bundles and modules are described in the npm dataset.
-For describing components we will use our new ontology</p>
+For describing components, we will use our newly created ontology.</p>
 
       <h3 id="node-package-manager-npm">Node Package Manager (npm)</h3>
       <p>All npm data is stored in a <a href="http://couchdb.apache.org/">CouchDB</a>
 <a href="https://registry.npmjs.org/">instance</a> with one entry per bundle.
-This corresponds to the metadata, added by the package developer in a <a href="https://docs.npmjs.com/files/package.json"><code>package.json</code></a> file,
+This corresponds to the metadata, manually added by the package developer in a <a href="https://docs.npmjs.com/files/package.json"><code>package.json</code></a> file,
 with additional metadata automatically added by the npm publishing process.
-To be able to uniquely identify software components and,
-more importantly, interlink them,
-we converted the JSON metadata provided by the npm registry to RDF,
-for which we set up a <a href="https://github.com/LinkedSoftwareDependencies/npm-extraction-server" class="mandatory" data-link-text="https:/​/​github.com/​LinkedSoftwareDependencies/​npm-​extraction-​server">server</a>.</p>
+To uniquely identify and interlink software components,
+we developed a <a href="https://github.com/LinkedSoftwareDependencies/npm-extraction-server" class="mandatory" data-link-text="https:/​/​github.com/​LinkedSoftwareDependencies/​npm-​extraction-​server">server</a>
+that converts the JSON metadata provided by the npm registry to RDF.</p>
 
       <h3 id="describing-components-and-their-configuration">Describing components and their configuration</h3>
       <p>The <a href="https://linkedsoftwaredependencies.org/vocabularies/object-oriented"><em>Object-Oriented Components ontology</em></a>
 is an ontology for describing software components and their instantiation in a certain configuration.
 Within this ontology,
 we reuse Fowler’s definition of a <a property="http://purl.org/spar/cito/providesQuotationFor" href="https://martinfowler.com/articles/injection.html">software component</a> <a class="reference" href="#ref-14">[14]</a> as a “glob” of software.
-The purpose of a component is to provide operations that can be used by other components.
+The purpose of a component is to encapsulate functionality that can be reused by other components.
 The instantiation of a component can require certain parameters,
-just like object-oriented programming (OOP) languages allow constructors to have certain arguments.
+similar to how object-oriented programming (OOP) languages allow constructors to have certain arguments.
 We assume OOP in the broad sense of the word, which only requires <em>classes</em>, <em>objects</em> and <em>constructor parameters</em>.
 <a href="#voc-oo-diagram">Fig. 1</a> shows an overview of the ontology.</p>
 
@@ -261,11 +263,11 @@ The parameters to construct a component can therefore be defined as an <code>rdf
 This class structure enables convenient semantic descriptions of components instantiations
 through the regular <code>rdf:type</code> predicate.
 For instance,
-a software module representing a parser
+a software module representing a certain datasource
 can be described as
-<code>ldfs:Datasource:Hdt a oo:Class.</code>,
+<code>ldfs:Datasource:Hdt rdf:type oo:Class.</code>,
 and a concrete instance is
-<code>:myHdtDatasource a ldfs:Datasource:Hdt</code>.</p>
+<code>:myHdtDatasource rdf:type ldfs:Datasource:Hdt</code>.</p>
 
       <p>Several <code>oo:Component</code> subclasses are defined.
 An <code>oo:Component</code> can be an <code>oo:Class</code>, which means that it can be instantiated based on parameters.
@@ -279,7 +281,8 @@ Conforming to the RDF semantics, components can have multiple ancestors, and are
       <p>The parameters that are used to instantiate an <code>oo:Class</code> to an <code>oo:Instance</code> are of type <code>oo:Parameter</code>.
 An <code>oo:Parameter</code> is a <em>subclass</em> of <code>rdfs:Property</code>, which simplifies its usage as an RDF property.
 <code>oo:defaultValue</code> allows parameters to have a default value when no other values have been provided.
-The <code>oo:uniqueValue</code> predicate is a flag that can be set to indicate whether or not the parameter can only have a single value.</p>
+The <code>oo:uniqueValue</code> predicate is a flag that can be set to indicate whether the parameter can only have a single value.</p>
+
     </section>
 
     <section id="use-case">
