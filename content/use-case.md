@@ -21,7 +21,6 @@ Furthermore, we provide an automatically generated semantic description
 of all concrete installed dependency versions
 for both the LDF client and server.
 This is necessary because,
-as discussed in [](#modules),
 modules indicate a compatibility range
 instead of a concrete version.
 
