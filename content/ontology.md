@@ -1,19 +1,22 @@
 ## Ontology
 {:#ontology}
 
-To make sure we can fully describe our experiments in RDF,
-we need some way to link to the specific software components
+To fully describe experiments in RDF,
+we need a way to link to the specific software components
 that were used when running the experiment.
-To this end we converted the entire npm library to RDF.
-That library contains over 480,000 JavaScript packages
-and is the most relevant JavaScript package manager.
-After conversion we publish over 194,000,000 
+As a use case,
+we considered the largest ecosystem of the popular JavaScript language:
+the registry of the _Node Package Manager (npm)_.
+We converted the entire npm registry,
+consisting of over 480,000 JavaScript packages,
+to RDF.
+After conversion, we published the resulting 194,000,000+
 [triples](https://linkedsoftwaredependencies.org/) through multiple interfaces.
 
 We also created an ontology to describe
 how software components can be configured.
-Now we can not only describe all the packages used by the software,
-but also how the software itself is configured for maximum reproducability.
+That way, we can not only describe all the packages used by the software,
+but also how the software itself is configured.
 
 ### Software modules
 
@@ -35,26 +38,25 @@ Drilling down from the top to the bottom, we have the following layers:
  The [*N3.js 0.10.0 Parser*](https://github.com/RubenVerborgh/N3.js/blob/v0.10.0/lib/N3Parser.js) is a component.
  
 Bundles and modules are described in the npm dataset.
-For describing components we will use our new ontology
+For describing components, we will use our newly created ontology.
 
 ### Node Package Manager (npm)
 All npm data is stored in a [CouchDB](http://couchdb.apache.org/)
 [instance](https://registry.npmjs.org/) with one entry per bundle.
-This corresponds to the metadata, added by the package developer in a [`package.json`](https://docs.npmjs.com/files/package.json) file,
+This corresponds to the metadata, manually added by the package developer in a [`package.json`](https://docs.npmjs.com/files/package.json) file,
 with additional metadata automatically added by the npm publishing process.
-To be able to uniquely identify software components and,
-more importantly, interlink them,
-we converted the JSON metadata provided by the npm registry to RDF,
-for which we set up a [server](https://github.com/LinkedSoftwareDependencies/npm-extraction-server){:.mandatory}.
+To uniquely identify and interlink software components,
+we developed a [server](https://github.com/LinkedSoftwareDependencies/npm-extraction-server){:.mandatory}
+that converts the JSON metadata provided by the npm registry to RDF.
 
 ### Describing components and their configuration
 The [_Object-Oriented Components ontology_](https://linkedsoftwaredependencies.org/vocabularies/object-oriented)
 is an ontology for describing software components and their instantiation in a certain configuration.
 Within this ontology,
 we reuse Fowler's definition of a [software component](cito:providesQuotationFor DependencyInjection) as a "glob" of software.
-The purpose of a component is to provide operations that can be used by other components.
+The purpose of a component is to encapsulate functionality that can be reused by other components.
 The instantiation of a component can require certain parameters,
-just like object-oriented programming (OOP) languages allow constructors to have certain arguments.
+similar to how object-oriented programming (OOP) languages allow constructors to have certain arguments.
 We assume OOP in the broad sense of the word, which only requires _classes_, _objects_ and _constructor parameters_.
 [](#voc-oo-diagram) shows an overview of the ontology.
 
@@ -71,11 +73,11 @@ The parameters to construct a component can therefore be defined as an `rdfs:Pro
 This class structure enables convenient semantic descriptions of components instantiations
 through the regular `rdf:type` predicate.
 For instance,
-a software module representing a parser
+a software module representing a certain datasource
 can be described as
-`ldfs:Datasource:Hdt a oo:Class.`,
+`ldfs:Datasource:Hdt rdf:type oo:Class.`,
 and a concrete instance is
-`:myHdtDatasource a ldfs:Datasource:Hdt`.
+`:myHdtDatasource rdf:type ldfs:Datasource:Hdt`.
 
 
 Several `oo:Component` subclasses are defined.
@@ -90,4 +92,4 @@ Conforming to the RDF semantics, components can have multiple ancestors, and are
 The parameters that are used to instantiate an `oo:Class` to an `oo:Instance` are of type `oo:Parameter`.
 An `oo:Parameter` is a _subclass_ of `rdfs:Property`, which simplifies its usage as an RDF property.
 `oo:defaultValue` allows parameters to have a default value when no other values have been provided.
-The `oo:uniqueValue` predicate is a flag that can be set to indicate whether or not the parameter can only have a single value.
+The `oo:uniqueValue` predicate is a flag that can be set to indicate whether the parameter can only have a single value.
