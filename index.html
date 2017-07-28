@@ -295,10 +295,10 @@ on how to create such descriptions for other evaluations.
 The intention is that future research articles
 directly describe their experimental setup this way,
 either through HTML with embedded RDFa
-or as a reference to an IRI of an RDF document.</p>
+or as a reference to an IRI of an external RDF document.</p>
 
       <p>This experiment we will describe
-originates from <a property="http://purl.org/spar/cito/citesAsAuthority" href="http://linkeddatafragments.org/publications/iswc2014.pdf">an ISWC2014 article</a> <a class="reference" href="#ref-15">[15]</a>
+originates from <a property="http://purl.org/spar/cito/citesAsAuthority" href="http://linkeddatafragments.org/publications/iswc2014.pdf">an article on query interfaces</a> <a class="reference" href="#ref-15">[15]</a>
 and involves specific software configurations
 of a Linked Data Fragments (LDF) client and server.
 We have semantically described the <a href="https://github.com/LinkedDataFragments/Server.js/tree/feature-lsd">LDF server</a> module and its 32 components.
@@ -311,16 +311,7 @@ This is necessary because,
 modules indicate a compatibility range
 instead of a concrete version.</p>
 
-      <p>The ISWC2014 LDF experiment can be described using the following <a about="#ldf-2014-qdwha-experiment-workflow" content="LDF 2014 experiment workflow" href="#ldf-2014-qdwha-experiment-workflow" property="rdfs:label" rel="cc:license" resource="https://creativecommons.org/licenses/by/4.0/">workflow</a>:</p>
-
-      <!-- TODO:
-  Define (elsewhere) and reuse an actual IRI Template for the workflow and steps
-  i.e., preferrably not relative to this document.
-  Change "#ldf-2014-qdwha-" to something else that is machine-generated and
-  determinstic. More specific to the operation and independent to the article it
-  was used in.
-
--->
+      <p>The LDF experiment can be described using the following <a about="#ldf-2014-qdwha-experiment-workflow" content="LDF 2014 experiment workflow" href="#ldf-2014-qdwha-experiment-workflow" property="rdfs:label" rel="cc:license" resource="https://creativecommons.org/licenses/by/4.0/">workflow</a> (RDFa-annotated):</p>
 
       <ol id="ldf-2014-qdwha-experiment-workflow" property="schema:hasPart" resource="#ldf-2014-qdwha-experiment-workflow" typeof="opmw:WorkflowTemplate">
 <li id="ldf-2014-qdwha-experiment-create-vm-for-server" about="#ldf-2014-qdwha-experiment-create-vm-for-server" typeof="opmw:WorkflowTemplateProcess" rel="opmw:isStepOfTemplate" resource="#ldf-2014-qdwha-experiment-workflow" property="rdfs:label">Create 1 virtual machine for the server.</li>
@@ -335,14 +326,14 @@ instead of a concrete version.</p>
         </li>
 <li id="ldf-2014-qdwha-experiment-execute-bsbm-per-client" about="#ldf-2014-qdwha-experiment-bsbm-per-client" typeof="opmw:WorkflowTemplateProcess" rel="opmw:isStepOfTemplate" resource="#ldf-2014-qdwha-experiment-workflow" property="rdfs:label">Execute four processes of the <a property="http://purl.org/spar/cito/cites" href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.161.8030&amp;rep=rep1&amp;type=pdf">Berlin SPARQL benchmark</a> <a class="reference" href="#ref-16">[16]</a> with the client software for each client machine.</li>
 <li id="ldf-2014-qdwha-experiment-record-cpu-ram-client-server-io-cache" about="#ldf-2014-qdwha-experiment-record-cpu-ram-client-server-io-cache" typeof="opmw:WorkflowTemplateProcess" rel="opmw:isStepOfTemplate" resource="#ldf-2014-qdwha-experiment-workflow" property="rdfs:label">Record CPU time, RAM usage of each client, the CPU time and RAM usage of the server, and measure the ingoing and outgoing bandwidth of the cache.</li>
-<li id="ldf-2014-qdwha-experiment-publish-results" about="#ldf-2014-qdwha-experiment-publish-results" typeof="opmw:WorkflowTemplateProcess" rel="opmw:isStepOfTemplate" resource="#ldf-2014-qdwha-experiment-workflow" property="rdfs:label">Publish <a href="http://data.linkeddatafragments.org/benchmark">results</a> online.</li>
+<li id="ldf-2014-qdwha-experiment-publish-results" about="#ldf-2014-qdwha-experiment-publish-results" typeof="opmw:WorkflowTemplateProcess" rel="opmw:isStepOfTemplate" resource="#ldf-2014-qdwha-experiment-workflow" property="rdfs:label">Publish the <a href="http://data.linkeddatafragments.org/benchmark">results</a> online.</li>
 </ol>
 
       <p>An <em>executed</em> workflow corresponding to the <em>abstract</em> experiment workflow above
 generates entities based on each activity as performed by various agents.
-Essentially the resulting observations of the experiment are
-among other valuable immutable provenance level data which plays a vital role in
-verifying and reproducing the steps which led to the outcome.
+The resulting observations of the experiment are
+among other valuable immutable provenance level data, which plays a vital role in
+verifying and reproducing the steps that led to the outcome.
 Concretely, the conclusions in the article
 have the resulting data as provenance,
 which in turn was generated by applying the steps above.</p>
