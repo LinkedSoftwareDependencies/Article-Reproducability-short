@@ -29,7 +29,7 @@ Drilling down from the top to the bottom, we have the following layers:
  - a **bundle** is a container
  with metadata about the software and its functionality
  across different points in time.
- An example is [the *N3.js* library](https://linkedsoftwaredependencies.org/bundles/npm/n3).
+ An example is [the *N3.js* library](https://linkedsoftwaredependencies.org/bundles/npm/n3){:.mandatory}.
  - a **module** or *version* is a concrete software package
  and an implementation of a bundle.
  [*N3.js 0.10.0*](https://linkedsoftwaredependencies.org/bundles/npm/n3/0.10.0) is a module.
@@ -50,7 +50,7 @@ we developed a [server](https://github.com/LinkedSoftwareDependencies/npm-extra
 that converts the JSON metadata provided by the npm registry to RDF.
 
 ### Describing components and their configuration
-The [_Object-Oriented Components ontology_](https://linkedsoftwaredependencies.org/vocabularies/object-oriented)
+The [_Object-Oriented Components ontology_](https://linkedsoftwaredependencies.org/vocabularies/object-oriented){:.mandatory}
 is an ontology for describing software components and their instantiation in a certain configuration.
 Within this ontology,
 we reuse Fowler's definition of a [software component](cito:providesQuotationFor DependencyInjection) as a "glob" of software.

@@ -16,7 +16,7 @@ and involves specific software configurations
 of a Linked Data Fragments (LDF) client and server.
 We have semantically described the [LDF server](https://github.com/LinkedDataFragments/Server.js/tree/feature-lsd) module and its 32 components.
 Instead of the former domain-specific [JSON configuration file](https://github.com/LinkedDataFragments/Server.js/blob/master/config/config-example.json),
-the [semantic configuration](https://github.com/LinkedDataFragments/Server.js/blob/feature-lsd/config/config-example.json) is Linked Data.
+the [semantic configuration](https://github.com/LinkedDataFragments/Server.js/blob/feature-lsd/config/config-example.json){:.mandatory} is Linked Data.
 Furthermore, we provide an automatically generated semantic description
 of all concrete installed dependency versions
 for both the LDF client and server.
