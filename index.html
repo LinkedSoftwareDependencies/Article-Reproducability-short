@@ -173,6 +173,9 @@ While reusability of datasets is one aspect of experiment reproducibility,
 our work focuses on reusability of software within experiments, and replication of the environment.</p>
 
       <h3 id="ontologies-and-vocabularies-for-describing-experiments">Ontologies and vocabularies for describing experiments</h3>
+
+      <p class="todo">Make comparisons to own ontology.</p>
+
       <p>The <a property="http://purl.org/spar/cito/citesAsAuthority" href="https://www.w3.org/TR/prov-o/">PROV Ontology</a> <a class="reference" href="#ref-6">[6]</a> is a domain-independent ontology to capture provenance information about entities, activities, and agents involved in producing data. <a property="http://purl.org/spar/cito/citesAsAuthority" href="http://www.opmw.org/model/OPMW/">The OPMW-PROV Ontology</a> <a class="reference" href="#ref-7">[7]</a> is an ontology for describing abstract and executable workflows. It extends PROV-O and the <a property="http://purl.org/spar/cito/citesAsAuthority" href="http://vocab.linkeddata.es/p-plan/">P-PLAN Ontology</a> <a class="reference" href="#ref-8">[8]</a> which is designed to represent scientific processes. The <a property="http://purl.org/spar/cito/citesAsAuthority" href="https://www.w3.org/TR/vocab-data-cube/">RDF Data Cube Vocabulary</a> <a class="reference" href="#ref-9">[9]</a> enables defining and publishing multi-dimensional data structures and observations.
 <a property="http://purl.org/spar/cito/citesAsAuthority" href="http://rdf-vocabulary.ddialliance.org/discovery.html">DDI-RDF Discovery Vocabulary</a> <a class="reference" href="#ref-10">[10]</a> is a vocabulary for publishing metadata about research and survey data.</p>
 
@@ -200,6 +203,8 @@ consisting of over 480,000 JavaScript packages,
 to RDF.
 After conversion, we published the resulting 194,000,000+
 <a href="https://linkedsoftwaredependencies.org/">triples</a> through multiple interfaces.</p>
+
+      <p class="todo">Say why we used JavaScript</p>
 
       <p>We also created an ontology to describe
 how software components can be configured.
@@ -240,6 +245,9 @@ we developed a <a href="https://github.com/LinkedSoftwareDependencies/npm-extra
 that converts the JSON metadata provided by the npm registry to RDF.</p>
 
       <h3 id="describing-components-and-their-configuration">Describing components and their configuration</h3>
+
+      <p class="todo">Explain link between oo ontology and modules?</p>
+
       <p>The <a href="https://linkedsoftwaredependencies.org/vocabularies/object-oriented" class="mandatory" data-link-text="https:/​/​linkedsoftwaredependencies.org/​vocabularies/​object-​oriented"><em>Object-Oriented Components ontology</em></a>
 is an ontology for describing software components and their instantiation in a certain configuration.
 Within this ontology,
@@ -326,7 +334,9 @@ instead of a concrete version.</p>
         </li>
 <li id="ldf-2014-qdwha-experiment-execute-bsbm-per-client" about="#ldf-2014-qdwha-experiment-bsbm-per-client" typeof="opmw:WorkflowTemplateProcess" rel="opmw:isStepOfTemplate" resource="#ldf-2014-qdwha-experiment-workflow" property="rdfs:label">Execute four processes of the <a property="http://purl.org/spar/cito/cites" href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.161.8030&amp;rep=rep1&amp;type=pdf">Berlin SPARQL benchmark</a> <a class="reference" href="#ref-16">\[16\]</a> with the client software for each client machine.</li>
 <li id="ldf-2014-qdwha-experiment-record-cpu-ram-client-server-io-cache" about="#ldf-2014-qdwha-experiment-record-cpu-ram-client-server-io-cache" typeof="opmw:WorkflowTemplateProcess" rel="opmw:isStepOfTemplate" resource="#ldf-2014-qdwha-experiment-workflow" property="rdfs:label">Record CPU time, RAM usage of each client, the CPU time and RAM usage of the server, and measure the ingoing and outgoing bandwidth of the cache.</li>
-<li id="ldf-2014-qdwha-experiment-publish-results" about="#ldf-2014-qdwha-experiment-publish-results" typeof="opmw:WorkflowTemplateProcess" rel="opmw:isStepOfTemplate" resource="#ldf-2014-qdwha-experiment-workflow" property="rdfs:label">Publish the <a href="http://data.linkeddatafragments.org/benchmark">results</a> online.</li>
+<li id="ldf-2014-qdwha-experiment-publish-results" about="#ldf-2014-qdwha-experiment-publish-results" typeof="opmw:WorkflowTemplateProcess" rel="opmw:isStepOfTemplate" resource="#ldf-2014-qdwha-experiment-workflow" property="rdfs:label">
+          <p>Publish the <a href="http://data.linkeddatafragments.org/benchmark" class="mandatory" data-link-text="http:/​/​data.linkeddatafragments.org/​benchmark">results</a> online.</p>
+        </li>
 </ol>
 
       <p>An <em>executed</em> workflow corresponding to the <em>abstract</em> experiment workflow above
@@ -369,6 +379,11 @@ and ensures their sustainability.</p>
 
     <section id="conclusion">
       <h2>Conclusion</h2>
+
+      <p class="todo">Talk about what to do when code that is not in a repository is used?
+User-friendliness of resulting configuration?
+Compare to bash scripts/iPython notebooks?
+Talk about triple validation?</p>
 
       <p>The core idea of the scientific process is <em>standing on the shoulders of giants</em>.
 This not only means we should build upon the work of others,
