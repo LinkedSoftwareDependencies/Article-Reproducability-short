@@ -1,6 +1,12 @@
 ## Conclusion
 {:#conclusion}
 
+{:.todo}
+Talk about what to do when code that is not in a repository is used?
+User-friendliness of resulting configuration?
+Compare to bash scripts/iPython notebooks?
+Talk about triple validation?
+
 The core idea of the scientific process is _standing on the shoulders of giants_.
 This not only means we should build upon the work of others,
 but also that we should enable others to build upon our work.

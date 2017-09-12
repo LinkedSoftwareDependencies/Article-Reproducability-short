@@ -37,7 +37,8 @@ The LDF experiment can be described using the following <a about="#ldf-2014-qdwh
 </li>
 <li id="ldf-2014-qdwha-experiment-execute-bsbm-per-client" about="#ldf-2014-qdwha-experiment-bsbm-per-client" typeof="opmw:WorkflowTemplateProcess" rel="opmw:isStepOfTemplate" resource="#ldf-2014-qdwha-experiment-workflow" property="rdfs:label">Execute four processes of the [Berlin SPARQL benchmark](cite:cites bsdm) with the client software for each client machine.</li>
 <li id="ldf-2014-qdwha-experiment-record-cpu-ram-client-server-io-cache" about="#ldf-2014-qdwha-experiment-record-cpu-ram-client-server-io-cache" typeof="opmw:WorkflowTemplateProcess" rel="opmw:isStepOfTemplate" resource="#ldf-2014-qdwha-experiment-workflow" property="rdfs:label">Record CPU time, RAM usage of each client, the CPU time and RAM usage of the server, and measure the ingoing and outgoing bandwidth of the cache.</li>
-<li id="ldf-2014-qdwha-experiment-publish-results" about="#ldf-2014-qdwha-experiment-publish-results" typeof="opmw:WorkflowTemplateProcess" rel="opmw:isStepOfTemplate" resource="#ldf-2014-qdwha-experiment-workflow" property="rdfs:label">Publish the <a href="http://data.linkeddatafragments.org/benchmark">results</a> online.</li>
+<li id="ldf-2014-qdwha-experiment-publish-results" about="#ldf-2014-qdwha-experiment-publish-results" typeof="opmw:WorkflowTemplateProcess" rel="opmw:isStepOfTemplate" resource="#ldf-2014-qdwha-experiment-workflow" property="rdfs:label" markdown="1">Publish the [results](http://data.linkeddatafragments.org/benchmark){:.mandatory} online.
+</li>
 </ol>
 
 An *executed* workflow corresponding to the *abstract* experiment workflow above

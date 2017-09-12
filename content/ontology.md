@@ -13,6 +13,9 @@ to RDF.
 After conversion, we published the resulting 194,000,000+
 [triples](https://linkedsoftwaredependencies.org/) through multiple interfaces.
 
+{:.todo}
+Say why we used JavaScript
+
 We also created an ontology to describe
 how software components can be configured.
 That way, we can not only describe all the packages used by the software,
@@ -50,6 +53,10 @@ we developed a [server](https://github.com/LinkedSoftwareDependencies/npm-extra
 that converts the JSON metadata provided by the npm registry to RDF.
 
 ### Describing components and their configuration
+
+{:.todo}
+Explain link between oo ontology and modules?
+
 The [_Object-Oriented Components ontology_](https://linkedsoftwaredependencies.org/vocabularies/object-oriented){:.mandatory}
 is an ontology for describing software components and their instantiation in a certain configuration.
 Within this ontology,
