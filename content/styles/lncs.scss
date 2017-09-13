@@ -418,7 +418,8 @@ dl.references {
     counter-increment: reference;
 
     &:before {
-      content: counter(reference) ". ";
+      content: counter(reference) ". ";
+      white-space: pre;
       display: inline-block;
       width: $number-width;
       text-align: right;
