@@ -8,7 +8,8 @@ on how to create such descriptions for other evaluations.
 The intention is that future research articles
 directly describe their experimental setup this way,
 either through HTML with embedded RDFa
-or as a reference to an IRI of an external RDF document.
+or as a reference to an IRI of an external RDF document,
+using, for example, the ontologies described in [](#related-work-ontologies).
 
 This experiment we will describe
 originates from [an article on query interfaces](cite:citesAsAuthority verborgh_iswc_2014)

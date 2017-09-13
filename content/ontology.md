@@ -8,13 +8,12 @@ As a use case,
 we considered the largest ecosystem of the popular JavaScript language:
 the registry of the _Node Package Manager (npm)_.
 We converted the entire npm registry,
-consisting of over 480,000 JavaScript packages,
+consisting of over 500,000 JavaScript packages,
 to RDF.
-After conversion, we published the resulting 194,000,000+
+After conversion, we published the resulting 200,000,000+
 [triples](https://linkedsoftwaredependencies.org/) through multiple interfaces.
-
-{:.todo}
-Say why we used JavaScript
+We opted for the npm registry due to it being one of the largest package repositories available
+and JavaScript's close ties to Web technology.
 
 We also created an ontology to describe
 how software components can be configured.
@@ -51,11 +50,10 @@ with additional metadata automatically added by the npm publishing process.
 To uniquely identify and interlink software components,
 we developed a [server](https://github.com/LinkedSoftwareDependencies/npm-extraction-server){:.mandatory}
 that converts the JSON metadata provided by the npm registry to RDF.
+An important focus of the conversion process was URI re-use,
+maximizing the available links between different resources.
 
 ### Describing components and their configuration
-
-{:.todo}
-Explain link between oo ontology and modules?
 
 The [_Object-Oriented Components ontology_](https://linkedsoftwaredependencies.org/vocabularies/object-oriented){:.mandatory}
 is an ontology for describing software components and their instantiation in a certain configuration.
@@ -85,6 +83,8 @@ can be described as
 `ldfs:Datasource:Hdt rdf:type oo:Class.`,
 and a concrete instance is
 `:myHdtDatasource rdf:type ldfs:Datasource:Hdt`.
+To actually link components to their modules there is the `oo:component` predicate,
+combined with the `oo:Module` class.
 
 
 Several `oo:Component` subclasses are defined.

@@ -24,9 +24,7 @@ While reusability of datasets is one aspect of experiment reproducibility,
 our work focuses on reusability of software within experiments, and replication of the environment.
 
 ### Ontologies and vocabularies for describing experiments
-
-{:.todo}
-Make comparisons to own ontology.
+{:#related-work-ontologies}
 
 The [PROV Ontology](cito:citesAsAuthority PROVO) is a domain-independent ontology to capture provenance information about entities, activities, and agents involved in producing data. [The OPMW-PROV Ontology](cito:citesAsAuthority OPMWPROV) is an ontology for describing abstract and executable workflows. It extends PROV-O and the [P-PLAN Ontology](cito:citesAsAuthority PPLAN) which is designed to represent scientific processes. The [RDF Data Cube Vocabulary](cito:citesAsAuthority DataCube) enables defining and publishing multi-dimensional data structures and observations.
 [DDI-RDF Discovery Vocabulary](cito:citesAsAuthority DDIRDF) is a vocabulary for publishing metadata about research and survey data.

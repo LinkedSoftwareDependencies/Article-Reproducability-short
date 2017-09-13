@@ -1,12 +1,6 @@
 ## Conclusion
 {:#conclusion}
 
-{:.todo}
-Talk about what to do when code that is not in a repository is used?
-User-friendliness of resulting configuration?
-Compare to bash scripts/iPython notebooks?
-Talk about triple validation?
-
 The core idea of the scientific process is _standing on the shoulders of giants_.
 This not only means we should build upon the work of others,
 but also that we should enable others to build upon our work.
@@ -36,6 +30,10 @@ of the Java language,
 the RubyGems repository for the Ruby language,
 the Comprehensive Perl Archive Network (CPAN) repository for the Perl language,
 or the Python Package Index (PyPI) for Python.
+The usage of Linked Data to describe the software and experiments
+has the added advantage of linking different descriptions together,
+which allows the answering of such questions as
+<q>Which experiments made use of this benchmark?</q>
 
 Semantic description can serve many more roles
 in addition to identifying and describing software configurations.
