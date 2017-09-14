@@ -362,6 +362,15 @@ header {
   .actions, .context {
     display: none;
   }
+  
+  .canonical {
+    p {
+      text-align: center;
+    }
+    a {
+      font-style: italic;
+    }
+  }
 }
 
 #authors {
