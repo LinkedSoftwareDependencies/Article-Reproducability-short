@@ -35,7 +35,7 @@ has the added advantage of linking different descriptions together,
 which allows the answering of such questions as
 <q>Which experiments made use of this benchmark?</q>
 
-Semantic description can serve many more roles
+Semantic descriptions can serve many more roles
 in addition to identifying and describing software configurations.
 Since the descriptions are exact and machine-readable,
 an automated [dependency injection](cite:citesAsAuthority DependencyInjection) framework
